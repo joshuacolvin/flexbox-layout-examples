@@ -1,0 +1,90 @@
+.example {
+  padding: 24px;
+  display: flex;
+  background: #f2f7ff;
+  flex-wrap: wrap;
+  resize: horizontal;
+  overflow: auto;
+}
+
+.example.align {
+  height: 400px;
+}
+
+.example.gap {
+  gap: 20px;
+}
+
+.card.xl {
+  width: 200px;
+}
+
+.card.last {
+  order: 1;
+}
+
+.card.grow {
+  flex-grow: 1;
+}
+
+.example.huge {
+  flex-wrap: nowrap;
+}
+
+.example.huge .card {
+  flex-basis: 400px;
+}
+
+.example .card.shrink {
+  flex-shrink: 2;
+}
+
+.example.flex-basis {
+  flex-wrap: nowrap;
+}
+
+.example.flex-basis > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.example.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.example.centered > * {
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.example.center-vert {
+  height: 164px;
+  align-items: center;
+}
+
+.order-num {
+  font-size: 22px;
+  font-weight: 500;
+  color: #646c8d;
+  margin: 0 12px;
+}
+
+.example.flex-end {
+  justify-content: flex-end;
+}
+
+.example.space-between {
+  justify-content: space-between;
+}
+
+.example.grid {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.example.grid > * {
+  flex: 1;
+}

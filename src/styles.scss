@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
+
+@import "peak-ui/main";
+
+@include mat.core($peak-typography);
+
+$theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $primary,
+      accent: $accent,
+      warn: $warn,
+    ),
+  )
+);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 24px;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-select-panel.peak-panel.dropdown,
+.mat-select-panel.peak-panel-multi {
+  background-color: #fff;
+}
+
+.spacer {
+  height: 48px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #f2f7ff;
+}
